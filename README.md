@@ -14,50 +14,6 @@ To develop a machine learning model that can be used to predict and determine th
 Customer attrition, the loss of clients or customers, is a significant issue for industries like telecommunications and Communication Technology. Effectively managing and reducing attrition is essential for businesses operating in these sectors.
 The primary objective of this project is to enhance customer retention by investigating the key factors associated with customers unsubscribing from a service, specifically within the telecommunication sector. The focus is on identifying patterns that may predict customer churn and devising strategies to address this phenomenon.
  The overarching goal is to minimize financial losses attributed to customers who discontinue their services. The project seeks to uncover discernible patterns in customer behavior leading to dropping off.
-## Data Understanding.
-The data used has been sourced from their database. The dataset contains a record of 4250 rows and 21 columns containing different features. Out of the 21 columns, 3 are categorical and 15 are numerical. 
-# Data Cleaning
-We went through the dataset and inspected if there were missing values and null values. From this process there were no missing values and null values This shows the dataset we are working with to be complete. There were no duplicates in the dataset. 
-# Data Analysis
-In the Exploratory Data Analysis process, we looked into the dataset by visually and statistically examining and understanding the data before further splitting it for more analysis and modelling.
-![alt text](image.png)
-From the visualization above the observations on the distribution of the numerical features can be seen
- 1. The distribution in the Account length is evenly skewed, indicating that the majority of customers have shorter account lengths. This suggests potential inaccuracies in predicting customer dropping off, as longer account lengths might be a more accurate predictor.
-
- 2. The distribution of the Number of Voice Mail Messages is relatively even, indicating that the number of voicemail messages is not a particularly strong predictor of customer churn.
- ![alt text](image-2.png)
- 3. Total Day Minutes, Total Day Calls, and Total Day Charge: These features show a significant amount of potential noise in the data, as the distribution is positively skewed and there is a significant amount of overlap between the classes.
- ![alt text](image-3.png)
-
-4. Total Evening Minutes, Calls, and Charge: These features show a similar pattern to the Total Day features, indicating potential noise and overlap between classes.
-![alt text](image-4.png)
-
-5. Total Nighttime Minutes, Calls, and Charge: The distribution of these features is negatively skewed, indicating that the majority of customers have less activity at night. This suggests potential inaccuracies in predicting customer churn, as higher activity at night might be a more accurate predictor.
-## Modeling
-The dataset we are working on is an example of a binary classification problem that predicts churn (whether a customer will churn or not). This will use a basic logistic regression model.
-
-To accomplish the outlined objectives specified in the project proposal, we plan to leverage a combination of diverse machine learning algorithms. The selected algorithms, each offering unique advantages, are tailored to address specific aspects of the project requirements. The following algorithms will be employed:
-1. Logistic Regression
-2. Decision Tree
-3. Random Forest
-
-In the assessment of our model performances, the ROC_AUC metric will be employed as a key evaluation measure. The ROC_AUC is a comprehensive metric particularly well-suited for binary classification problems. It considers both sensitivity and specificity across various threshold levels, providing a robust indication of a model's ability to discriminate between classes.
-
-
-# Logistic Regression
-The logistic regression model Despite its foundational nature, the model demonstrates effectiveness in capturing instances of interest, making it a valuable component of the predictive framework.
-# Decision Trees
-The recall score of the decision tree model stands at 0.71, a commendable performance that falls slightly short of surpassing our baseline model. This score implies that the model proficiently identifies approximately 71% of actual positive instances. While not an improvement over the baseline, the model's ability to capture a substantial portion of positive instances indicates its effectiveness in identifying potential cases of interest.
-# Random Forest
-The random forest classifier model exhibits an improved recall score of 0.73, showcasing a notable enhancement over its predecessor. This implies that the model accurately identifies approximately 73% of the actual positive instances.
-
-Upon evaluation through the confusion matrix, it becomes evident that the model achieves a higher count of true positives and true negatives in comparison to false positives and false negatives. This suggests a robust performance, emphasizing the model's ability to make correct predictions more frequently than incorrect ones, indicative of its avoidance of overfitting.
-
-As per the model's analysis, the top three most influential features are identified as total day charge, total international calls, and total evening charge.
-
-# Model Comparison
-# Model Tuning
-The tuned Random Forest model demonstrates strong performance in discerning between positive (churned) and negative (non-churned) customer classes, particularly in accurately identifying churned customers.Indicating its ability to correctly capture 76% of the actual churned customers.
 
 ## conclusion
 The Random Forest classifier has a recall score of 73% for predicting customer churn, effectively identifying many actual churners. While this is a good start, further feature engineering could enhance the model's performance. Improving recall is crucial for reducing misclassifications and better retaining at-risk customers. Continuous refinement through feature engineering is recommended to boost the model's accuracy and effectiveness.
