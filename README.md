@@ -15,27 +15,7 @@ Customer attrition, the loss of clients or customers, is a significant issue for
 The primary objective of this project is to enhance customer retention by investigating the key factors associated with customers unsubscribing from a service, specifically within the telecommunication sector. The focus is on identifying patterns that may predict customer churn and devising strategies to address this phenomenon.
  The overarching goal is to minimize financial losses attributed to customers who discontinue their services. The project seeks to uncover discernible patterns in customer behavior leading to dropping off.
 ## Data Understanding.
-The data used has been sourced from their database. The dataset contains a record of 4250 rows and 21 columns containing different features. Out of the 21 columns, 3 are categorical and 15 are numerical. The categorical features include:
-1.	State -This is where the customer resides
-3.  customer id- This is the customer Id on the services
-2.	Area code - The area code associated with the customer's phone number.
-2.	Account length - The number of days the customer has been an account holder.
-3.	Number of v-mail messages - The number of voice mail messages received by the customer.
-4.	Total day minutes - The total number of minutes the customer used during the day.
-5.	Total day calls - The total number of calls made by the customer during the day.
-6.	Total day charge - The total charges incurred by the customer for daytime usage.
-7.	Total evening minutes - The total number of minutes the customer used during the evening.
-8.	Total evening calls - The total number of calls the customer used during the evening.
-9.	Total evening charge - The total charges incurred by the customer during the evening.
-10.	Total night minutes - The total number of minutes the customer used during the night.
-11.	Total night calls - The total number of minutes the customer used during the night.
-12.	Total night charge - The total charges incurred by the customer for nighttime usage.
-13.	Total international minutes - The total number of international minutes used by the customer.
-14.	Total international calls - The total number of international calls used by the customer.
-15.	Total international charge - The total charges incurred by the customer for international usage.
-16.	number Customer service calls - The number of customer service calls made by the customer.
-17.	Churn – This is the target variable its binary (1 which means loss of client and 0 meaning loss of client).
-## Data Preparation
+The data used has been sourced from their database. The dataset contains a record of 4250 rows and 21 columns containing different features. Out of the 21 columns, 3 are categorical and 15 are numerical. 
 # Data Cleaning
 We went through the dataset and inspected if there were missing values and null values. From this process there were no missing values and null values This shows the dataset we are working with to be complete. There were no duplicates in the dataset. 
 # Data Analysis
