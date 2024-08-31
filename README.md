@@ -1,9 +1,6 @@
 ## Dimension Data Customer Attrition Prediction 
 ## Overview
-Dimension Data is a leading African born technology provider operating in the Middle East and Africa, offering a portfolio of services including systems integration, managed services infrastructure, cloud solutions, business applications, customer experience, and intelligent security solutions.Founded in 1983.
-Dimension Data is faced with a challenge where there is a high churn rate with most of its customers abandoning their services and switching to their competitors.
- The company has identified this problem and is now seeking to build a classifier that will help them predict whether a customer will soon stop doing business with them. 
-This will be done by proper analysis using their dataset to gain insights on what factors result in a high churning rate. A prediction model will be developed and this will provide insights and recommendations to the telecommunication company that will help them retain customers and avoid Account Cancellations.
+
 # Problem statement
 To develop a machine learning model that can be used to predict and determine the probability of Loss of Customers on the  service and what factors result in this.
 # Objectives
